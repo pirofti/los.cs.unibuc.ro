@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb,amscd}
+\usepackage{amsthm}
+
+%opening
+\title{Logic Seminar: Proof Interpretations III}
+\author{Speaker: Daniel Ivan, IMAR}
+\date{January 10, 2013}
+\begin{document}
+
+\maketitle
+In this seminar we will present the \emph{monotone modified realizability}, in which we extend the results from modified realizability studied in the previous seminar to the case where large classes of non-effective sentences are added to the theories we are working with, without having an impact on the extractability and complexity of uniform bounds.
+Similarly to the monotone realizability, we will show
+\begin{enumerate}
+ \item  \emph{Soundness theorem of \emph{monotone} modified realizability}, which allows us to obtain (provable in ${\bf E-HA}^\omega + \Theta$) \emph{monotone} realizers for a formula $A(\underline{a})$, provided we can prove $A(\underline{a})$ in ${\bf E-HA}^\omega +{\rm AC} +{\rm IP}^\omega_{\rm ef} + \Theta$ (Here $\Theta$ is a set of sentences of the form $\exists \underline{v}\leq_{\underline{\sigma}} \underline{r} B_{\rm ef}(\underline{v})$).
+ \item Some consequences of the \emph{schema of comprehension in all types for arbitrary negated formulas},
+ \begin{equation*}
+  {\rm CA}_\lnot^\omega:\equiv \exists \Phi^{0(\underline{\sigma})} \forall \underline{x}^{\underline{\sigma}}(\Phi(\underline{x})=_0 0 \leftrightarrow \lnot A(\underline{x})),
+ \end{equation*}
+where $A$ is an arbitrary formula not containing $\Phi$ free and $\underline{\sigma}$ an arbitrary tuple of types.
+ \item \emph{Main theorem on program extraction by \emph{monotone} modified realizability}, which, in ${\bf E-HA}^\omega+{\rm AC}+{\rm IP}^\omega_{\lnot} + \Omega$, from a proof of $\forall x^1 \forall y\leq_{\rho} sx \exists z^\tau A(x,y,z)$, allows us to extract a term $t$ such that we can prove $\forall x^1 \forall y\leq_\rho sx \exists z^\tau  A(x,y, tx)$, for any formula $A(x,y,z)$ in $\mathcal{L}({\bf E-HA}^\omega)$ (Here $\Omega$ is a set of sentences of the type $\forall \underline{u}^{\underline{\delta}} (C(\underline{u}) \rightarrow \exists \underline{v} \leq_{\underline{\sigma}} \underline{r}\,\underline{u} \lnot B(\underline{u}, \underline{v}))$, where $C$ and $B$ are arbitrary formulas of ${\bf E-HA}^\omega$, and $\rho$, $\tau$, $\underline{\sigma}$, $\underline{\delta}$ are arbitrary (tuples of) types.)
+\end{enumerate}
+\end{document}

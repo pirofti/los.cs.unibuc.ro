@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb,amscd}
+\usepackage{amsthm}
+\usepackage{fullpage}
+
+%opening
+\title{Logic Seminar: Proof Interpretations IV}
+\author{Speaker: Daniel Ivan, IMAR}
+\date{January 24, 2013}
+\begin{document}
+
+\maketitle
+In this seminar we will conclude our study of \emph{monotone modified realizability}, with the following:
+\thispagestyle{empty}
+\begin{enumerate}
+\item Corollary of the Soundness theorem for monotone modified realizability: in ${\bf E-HA}^\omega + {\rm AC} + {\rm IP}_\lnot^\omega + {\rm CA}_\lnot^\omega$, from a proof of 
+\begin{equation*}
+ \forall x^1 \forall y\leq_\rho sx \exists z^\tau A(x,y,z)
+\end{equation*}
+we can extract a term $t$ such that we can prove 
+\begin{equation*}
+\forall x^1 \forall y\leq_\rho sx \exists z\leq_\tau tx A(x,y,z)
+\end{equation*}
+for any formula $A$, closed term $s$ and types $\rho,\tau$ with $\deg(\tau)=2$.
+  \item \emph{Main theorem on program extraction by \emph{monotone} modified realizability}: in ${\bf E-HA}^\omega+{\rm AC}+{\rm IP}^\omega_{\lnot} + \Omega$, from a proof of 
+\begin{equation*}
+ \forall x^1 \forall y\leq_{\rho} sx \exists z^\tau A(x,y,z)
+\end{equation*}
+we can extract a term $t$ such that we can prove 
+\begin{equation*}
+\forall x^1 \forall y\leq_\rho sx \exists z^\tau  A(x,y, tx)
+\end{equation*}
+for any formula $A(x,y,z)$ in $\mathcal{L}({\bf E-HA}^\omega)$, where $\Omega$ is a set of sentences of the type 
+$\forall \underline{u}^{\underline{\delta}} (C(\underline{u}) \rightarrow \exists \underline{v} \leq_{\underline{\sigma}} \underline{r}\,\underline{u} \lnot B(\underline{u}, \underline{v}))$, with $C$ and $B$ arbitrary formulas of ${\bf E-HA}^\omega$, and $\rho$, $\tau$, $\underline{\sigma}$, $\underline{\delta}$ are arbitrary (tuples of) types.
+\item Applications of (monotone) modified realizability:
+\begin{itemize}
+ \item If $\Phi_{(\cdot)}^{1(1)(0)}$, $\Phi^{1(1)}$ are closed terms of ${\bf E-HA}^\omega$ satisfying
+\begin{equation*}
+ \forall x, y\leq_1 N \forall n^0 (\tilde{x} =_\mathbb{R} \tilde{y} \rightarrow \Phi_n(\tilde{x}) =_\mathbb{R} \Phi_n(\tilde{y}) \land \Phi(\tilde{x}) =_\mathbb{R} \Phi(\tilde{y}))
+\end{equation*}
+then provable pointwise convergence of $\Phi_n$ towards $\Phi$ on $[0,1]$ implies provable uniform convergence on $[0,1]$.
+
+\item The \emph{Weak Markov Principle}  (WMP for short), is not provable in ${\bf E-HA}^\omega + {\rm AC} + {\rm CA}_\lnot^\omega$, where WMP:``\emph{Every pseudo-positive real number is positive}'', and $a\in\mathbb{R}$ is pseudo-positive  if 
+$\forall x\in \mathbb{R} (\lnot\lnot (0<x) \lor \lnot \lnot (x<a))$.
+
+\end{itemize}
+
+\end{enumerate}
+\end{document}

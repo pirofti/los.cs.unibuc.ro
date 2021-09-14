@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newenvironment{proof}{{\it Proof. }}{\hspace*{\fill} $\Box$\par }
+
+\begin{document}
+\title{Finding generalised periodicities in words}
+\author{Florin Manea}
+\date{}
+\maketitle
+\thispagestyle{empty}
+%\section{Abstract}
+Pseudo-repetitions are a natural generalisation of the classical notion of repetitions in sequences. They are the repeated concatenation of a word and its encoding under a certain morphism or antimorphism (anti-/morphism, for short); a word that is a pseudo-repetition with respect to an anti-/morphism $f$ is called $f$-repetition. In this talk we present solutions for the following problems:
+\begin{itemize}
+\item for a word $w$ and an anti-/morphism $f$, decide whether $w$ is an $f$-repetition;
+\item for a word $w$, decide whether there exists an anti-/morphism $f$ such that $w$ is an $f$-repetition;
+\item for a word $w$ and a literal anti-/morphism $f$, decide whether $w$ contains as a factor an instance of a given pattern involving a variable $x$ and its 
+image under $f$, i.e., $f(x)$. 
+\item for a word $w$, a number $k$, and a literal anti-/morphism $f$, decide whether the word $w$ contains an arbitrary $f$-repetition of exponent $k$.
+\end{itemize}
+The overviewed results generalise both the problem of deciding whether a word has a fixed repetitive structure (e.g., is it a cube?) or a palindromic structure, as well as the problem finding fixed repetitive structures 
+(e.g., squares, cubes) inside a word and the problem of finding palindromic structures inside a word. For instance, we show how to detect efficiently in a word the existence of a factor of the form $xx^Rxxx^R$, or
+any other pattern of such type.
+
+The papers on which this talk is based were written together with Pawe\l{} Gawrychowski, Dirk Nowotka, Robert Merca\c{s} and C\u at\u alin Tiseanu.
+
+\begin{thebibliography}{99}
+\bibitem{GMMNT13}
+P.~Gawrychowski, F.~Manea, R.~Mercas, D.~Nowotka, and C.~Tiseanu.
+\newblock {Finding Pseudo-repetitions}.
+\newblock In {\em Proc. STACS}, volume~20 of {\em LIPIcs}, pages
+  257--268, 2013.
+\bibitem{GMN13}
+P.~Gawrychowski, F.~Manea, and D.~Nowotka.
+\newblock Discovering hidden repetitions in words.
+\newblock In {\em Proc. CiE}, volume 7921 of {\em LNCS}, pages 210--219.
+  Springer, 2013.
+\bibitem{GMMNT13}
+P.~Gawrychowski, F.~Manea, and D.~Nowotka.
+\newblock {Testing Generalised Freeness of Words}.
+\newblock In {\em Proc. STACS}, volume~25 of {\em LIPIcs}, pages
+  337--349, 2014.
+  
+\end{thebibliography}
+\end{document}
