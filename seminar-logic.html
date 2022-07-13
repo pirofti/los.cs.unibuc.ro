@@ -706,32 +706,52 @@ matching logic.
 
 <article>
 <header style="text-align:left;">
+		<h3 id="content">Friday, July 15, 2022 at 17:00</h3>
+</header>
+
+<p>The talk takes place at the <a href="https://runtimeverification.com">Runtime Verification (RV)</a>
+Bucharest headquarters (<a href="https://maps.app.goo.gl/VPwqB11VgsFZKeDX9">Popa Tatu 18</a>).
+</p>
+
+<p style="text-align:left;">
+<a href="https://lmf.cnrs.fr/AmelieLedein/">Amélie Ledein</a>  (Inria, Deducteam, LMF)
+
+<br>
+Dedukti, a standard language for the interoperability of proof systems
+<br><br>
+<a href="https://github.com/Deducteam/Dedukti">Dedukti</a> is a logical framework to encode 
+various logics to allow interoperability of proofs between different formal tools, like Coq, PVS or Isabelle. 
+This logical framework is based on $\lambda\Pi$-calculus modulo theory, a $\lambda$-calculus 
+with dependent types, and extended with rewriting rules.
+After a presentation of the $\lambda\Pi$-calculus modulo theory, I will talk about translations 
+to Dedukti, as well as interoperability challenges.
+Finally, I will mention other work done by <a href="https://deducteam.gitlabpages.inria.fr/">Deducteam</a>.
+</p>
+</article>
+
+
+<article>
+<header style="text-align:left;">
 		<h3 id="content">Tuesday, July 19, 2022 at 14:00</h3>
 </header>
 <p style="text-align:left;">
 <a href="http://nts.imag.fr/index.php/Radu_Iosif">Radu Iosif</a> (CNRS - VERIMAG)
 <br>
-The Entailment Problem in Separation Logic (advances amid the pandemic)
+On the Expressiveness of a Logic of Separated Relations
 <br><br>
-Abstract: Separation Logic (SL) is an expressive logic used to describe memory shapes (heaps) 
-mutated by pointer programs. The SL entailment problem asks, given two separating conjunctions 
-of equational (equality and disequality) and spatial (points-to and predicate) atoms, whether 
-all models of the first formula are also models of the second. In general, this problem is 
-undecidable. The most general decidable fragment is defined by two syntactic conditions 
-(progress and connectivity) ensuring that every model of a predicate atoms can be decomposed 
-into a backbone (a tree isomorphic with the unfolding tree of the recursive predicate) and 
-several edges between nodes in the backbone. In addition, we require a decidable semantic 
-condition (establishment) that requires all existentially quantified variables created during 
-unfolding to be associated with backbone cells. The talk presents recent results (2020-2021) 
-and is divided in three parts: (1) We explain why the connectivity and establishment conditions 
-are necessary (removing each one of them leads to undecidability). (2) We show that the progressing, 
-connected and established fragment is 2EXP-complete. (3) We present a generalization of 
-Separation Logic to logical structures (with arbitrary number of relational symbols), 
-whose entailment problem is also 2EXP-complete. This latter logic is used to reason about 
-reconfigurable distributed systems, instead of pointer programs. 
+Abstract: We compare the model-theoretic expressiveness of the existential fragment of Separation 
+Logic over unrestricted relational signatures (SLR)  with only separating conjunction as 
+logical connective and higher-order inductive definitions, traditionally known as the symbolic 
+heap fragment, with (Monadic) Second Order Logic ((M)SO). While SLR and MSO are incomparable on 
+structures of unbounded treewidth, it turns out that SLR can be embedded in SO, in general, 
+and that MSO becomes a strict subset of SLR, when the treewidth of the models is bounded by 
+a parameter given as input. We also discuss the problem of defining a fragment of SLR that 
+is equivalent to MSO over models of bounded treewidth. Such a fragment would then become 
+the most general Separation Logic with a decidable entailment problem, a key ingredient of 
+practical verification methods for self-adapting (reconfigurable) component-based and distributed systems.
 <br>
-This talk presents results published at CSL'21 and CADE'21. 
-</p>
+Joint work with Florian Zuleger (TU Wien).
+ </p>
 </article>
 
 
